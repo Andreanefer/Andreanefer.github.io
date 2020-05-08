@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import * as bb from 'billboard';
 
-const DATA = require('./data/data.json') ;
+const DATA = require('data.json') ;
 
 bb.generate({
   data: {
