@@ -1,50 +1,49 @@
 import * as d3 from 'd3';
-const DATA = require('DistanceTrainKM.json')
+import * as bb from 'billboard';
 
-const WIDTH = 1000
-const HEIGHT = 500
-const MARGIN = 5
+const DATA = require('./data/data.json') ;
 
-const svg = d3.select('body')
-  .append('svg')
-  .attr('width', WIDTH)
-  .attr('height', HEIGHT)
-
-    const MARGIN_LEFT = 100
-    const MARGIN_BOTTOM = 50
-    const BAR_WIDTH = (WIDTH - MARGIN_LEFT) / DATA.length
-    
-    
-    const yScale = d3.scaleLinear()
-      .domain([0, d3.max(DATA, d => d.km)])
-      .range([HEIGHT - MARGIN_BOTTOM, 0])
-    
-    const batons = svg.append('g')
-      .attr('transform', `translate(${MARGIN_LEFT}, 0)`)
-    
-    batons.selectAll('rect')
-      .data(DATA)
-      .enter()
-      .append('rect')
-      .attr('x', (d, i) =>  i * BAR_WIDTH)
-      .attr('width', BAR_WIDTH - MARGIN)
-      .attr('y', d => yScale(d.km))
-      .attr('height', d => HEIGHT - MARGIN_BOTTOM - yScale(d.km))
-      .attr('fill', 'steelblue')
-    
-      batons.selectAll('text')
-        .data(DATA)
-        .enter()
-        .append('text')
-        .text(d => d.nom)
-        .attr('x', (d, i) =>  i * BAR_WIDTH + BAR_WIDTH / 2)
-        .attr('y', HEIGHT - MARGIN_BOTTOM / 2)
-        .attr('text-anchor', 'middle')
-    
-    const axis = d3.axisLeft(yScale)
-      .ticks(5)
-      .tickFormat(d => `${d / 1000}k`)
-    
-    const gAxis = svg.append('g')
-      .attr('transform', `translate(${MARGIN_LEFT  * 0.7}, 0)`)
-      .call(axis)
+bb.generate({
+  data: {
+    json: {
+      passagers_train: data.map(({ passagers_train }) => passagers_train),
+      passagers: data.map(({ passagers_tpr }) => passagers_tpr),
+      passagers: data.map(({ passagers_bateau }) => passagers_bateau),
+      km_train: data.map(({ km_train }) => km_train),
+      km_tpr: data.map(({ km_tpr }) => km_tpr),
+      km_bateau: data.map(({ km_bateau }) => km_bateau),
+    },
+    //Definition des axes y
+    axes: {
+      passagers_tpr: 'y',
+      km_train: 'y2',
+    },
+    types: {
+      passagers_train:"bar",
+      passagers_tpr:"bar",
+      passagers_bateau:"bar",
+      km_train:"line",
+      km_tpr:"line",
+      km_bateau:"line",
+    },
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: annee.map(({ annee }) => annee)
+    },
+    //Definition de l'axe y
+    y: {
+      tick:{
+        format: x => `${x/1000}k`
+      },
+      label: 'Nombre de passagers (en millier)',
+    },
+    //Montage + définition du 2e axe y
+    y2: {
+      show: true,
+      label: 'Nombre de km parcouru (en million)',
+    }
+  },
+  bindto: graph5,
+})
