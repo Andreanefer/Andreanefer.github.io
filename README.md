@@ -2,7 +2,7 @@
 Il s'agit d'un site web pour le cours de VisualDon dans le cadre de la formation IM à la HEIG-VD 
 
 
-UPDATE : Vendredi 8 mai 2020 à 12h06
+UPDATE : Vendredi 8 mai 2020 à 16h36
 
 Done
 
