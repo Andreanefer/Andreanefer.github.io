@@ -11,12 +11,12 @@ bb.generate({
       passagers: data.map(({ passagers_bateau }) => passagers_bateau),
       km_train: data.map(({ km_train }) => km_train),
       km_tpr: data.map(({ km_tpr }) => km_tpr),
-      km_bateau: data.map(({ km_bateau }) => km_bateau),
+      km_bateau: data.map(({ km_bateau }) => km_bateau)
     },
     //Definition des axes y
     axes: {
       passagers_tpr: 'y',
-      km_train: 'y2',
+      km_train: 'y2'
     },
     types: {
       passagers_train:"bar",
@@ -24,7 +24,7 @@ bb.generate({
       passagers_bateau:"bar",
       km_train:"line",
       km_tpr:"line",
-      km_bateau:"line",
+      km_bateau:"line"
     },
   },
   axis: {
