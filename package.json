@@ -1,0 +1,38 @@
+{
+  "name": "VisualDon",
+  "version": "1.0.0",
+  "description": "Il s'agit du cours de visualisation de données du département COMEM+ à la HEIG-VD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "batons": "parcel 20200228-Cours2-StuctureDeDonneesEnJS/src/index.html --out-dir 20200228-Cours2-StuctureDeDonneesEnJS/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andreanefer/VisualDonM47.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andreanefer/VisualDonM47/issues"
+  },
+  "homepage": "https://github.com/Andreanefer/VisualDonM47#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "billboard.js": "^1.12.8",
+    "cheerio": "^1.0.0-rc.3",
+    "clt": "^0.1.2",
+    "d3": "^5.16.0",
+    "dayjs": "^1.8.23",
+    "ndjson-cli": "^0.3.1",
+    "node-fetch": "^2.6.0",
+    "xcode": "^3.0.0",
+    "xlsx": "^0.15.6"
+  }
+}
