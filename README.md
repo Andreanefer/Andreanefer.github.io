@@ -1,4 +1,4 @@
-UPDATE : Jeudi 14 mai à 12h58
+UPDATE : Jeudi 14 mai à 19h14
 
 **Concepte**
 Le graphique représente l'utilisation des transports publics en Suisse par les pendulaires de l'année 1990, 1995 et de l'année 2000 jusqu'à l'année 2018. Il est divisé en deux parties :
@@ -20,7 +20,7 @@ ________
 
 **En cours**
 
-- Publier sur le web
+- Publier sur le web : Problème la page s'affiche mais pas le graphique...)
 
 **Todo**
 - Completer le readme
