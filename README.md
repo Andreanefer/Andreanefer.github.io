@@ -1,12 +1,12 @@
 UPDATE : Jeudi 14 mai à 12h58
 
 **Concepte**
-Le graphique représente l'utilisation des transports publics en Suisse de l'année 1990, 1995 et de l'année 2000 jusqu'à 2018. Il est divisé en deux parties :
-- un graphique en batons représentant le nombre de passagers/voyageurs qui utilise le moyen de transport (train/TPR/Bateau)
+Le graphique représente l'utilisation des transports publics en Suisse par les pendulaires de l'année 1990, 1995 et de l'année 2000 jusqu'à l'année 2018. Il est divisé en deux parties :
+- un graphique en batons représentant le nombre de passagers/voyageurs qui utilise le moyen de transport (train/TPR*/Bateau)
 - un graphique en graphe représentant le nombre de km total que les passagers/voyageurs qui ont parcourus avec les transports publics (train/TPR*/Bateau)
 
 ________
-TPR = Transports Publics Routiers
+* TPR = Transports Publics Routiers
 
 **Done**
 - Graphique représentant le nombre de voyageur en Train
@@ -29,7 +29,7 @@ TPR = Transports Publics Routiers
 
 - D'où viennent les données (où, qui, pourquoi...) ?
 
-Les données viennent du site de l'office fédérale de la statistique (https://www.bfs.admin.ch/bfs/fr/home/statistiques/mobilite-transports/themes-transversaux/transports-publics.assetdetail.11207456.html). Ces données montrent l'évolution au fil du temps de l'augmentation de voyageur et de marchandises ainsi que l'impact qu'il y a autour des transports publics (Consomation d'énergie, surface utilisé, nombre d'employé, nombre d'entreprise, infrastructure, finance, ...). Un cytoyen peut savoir combien côute cette infrastructure (Vu qu'une grande partie est payée par les impôts)
+Les données viennent du site de l'office fédérale de la statistique (https://www.bfs.admin.ch/bfs/fr/home/statistiques/mobilite-transports/themes-transversaux/transports-publics.assetdetail.11207456.html). Ces données montrent l'évolution au fil du temps de l'augmentation de voyageur et de marchandises ainsi que l'impact qu'il y a autour des transports publics (Consomation d'énergie, surface utilisé, nombre d'employé, nombre d'entreprise, infrastructure, finance, ...). Un cytoyen peut savoir combien côute cette infrastructure (Vu qu'une grande partie est payée par les impôts). 
 
 - Comment ont-elles été transformées ?
 
